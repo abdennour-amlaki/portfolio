@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Location Auto Abdennour</title>
+  <link rel="stylesheet" href="jreb.css" />
+  <script src="jre.js"></script>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div id="scroll-progress"></div>
+
+  <button id="toggle-dark" title="Mode Sombre/Clair"><i class="fas fa-moon"></i></button>
+
+  <button id="btn-top" title="Haut"><i class="fas fa-chevron-up"></i></button>
+
+  <header class="fade-in">
+    <h1>Bienvenue chez Location Auto Abdennour</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#reservation">Réservation</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Louez votre voiture en toute confiance 🚗</h2>
+      <p>Abdennour Location vous accompagne partout au Maroc.</p>
+      <a href="#reservation" class="btn-primary">Réservez maintenant</a>
+    </div>
+  </section>
+  
+  <section class="search-section">
+    <h2>Trouvez votre voiture idéale</h2>
+    <form id="searchForm">
+      <input type="text" placeholder="Ville" required />
+      <input type="date" required />
+      <select required>
+        <option value="">Type de voiture</option>
+        <option>Économique</option>
+        <option>SUV</option>
+        <option>Sport</option>
+      </select>
+      <button type="submit">Rechercher</button>
+    </form>
+
+  <section id="services" class="fade-in">
+    <ul class="services-list">
+      <li><i class="fas fa-car-side"></i> Location à la journée ou longue durée</li>
+      <li><i class="fas fa-headset"></i> Assistance 24h/24</li>
+      <li><i class="fas fa-truck"></i> Livraison à domicile</li>
+      <li><i class="fas fa-user-tie"></i> Conducteur en option</li>
+    </ul>
+  </section>
+ <section id="services" class="section fade-in">
+    <h2 class="section-title">Nos Services</h2>
+    <ul class="services-list">
+      <li>
+        <i class="fas fa-car-side"></i>
+        <div>
+          <h3>Location flexible</h3>
+          <p>À la journée, semaine ou mois pour vos besoins personnels ou professionnels.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-headset"></i>
+        <div>
+          <h3>Assistance 24h/24</h3>
+          <p>Service client disponible 24/7 pour une tranquillité totale.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-truck"></i>
+        <div>
+          <h3>Livraison à domicile</h3>
+          <p>Recevez votre voiture où que vous soyez sans frais cachés.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-user-tie"></i>
+        <div>
+          <h3>Chauffeur privé</h3>
+          <p>Un conducteur professionnel à votre service sur demande.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-shield-alt"></i>
+        <div>
+          <h3>Assurance incluse</h3>
+          <p>Assurance tous risques pour rouler en toute sérénité.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-sync-alt"></i>
+        <div>
+          <h3>Annulation flexible</h3>
+          <p>Annulez ou modifiez votre réservation sans frais jusqu'à 24h avant.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="offres-spec" class="section fade-in">
+    <h2 class="section-title">Offres Spéciales de la Semaine</h2>
+    <ul id="liste-offres" class="offers-list"></ul>
+  </section>
+
+  <section id="faq" class="section fade-in">
+    <h2 class="section-title">Questions Fréquentes</h2>
+    <div class="faq-grid">
+      <details>
+        <summary>Quels documents dois-je fournir ?</summary>
+        <p>Une pièce d'identité, un permis de conduire valide et une carte bancaire.</p>
+      </details>
+      <details>
+        <summary>Y a-t-il un dépôt de garantie ?</summary>
+        <p>Oui, un dépôt est requis selon la catégorie du véhicule.</p>
+      </details>
+      <details>
+        <summary>Les véhicules sont-ils assurés ?</summary>
+        <p>Oui, tous nos véhicules bénéficient d'une assurance tous risques.</p>
+      </details>
+      <details>
+        <summary>Puis-je annuler gratuitement ?</summary>
+        <p>Oui, jusqu'à 24h avant la prise du véhicule.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="galerie" class="fade-in">
+    <h2><i class="fas fa-images"></i> Galerie</h2>
+    <div class="gallery-grid">
+
+      <img src="https://cdn.group.renault.com/dac/master/dacia-vn/vehicules/sandero/sandero-bji/sandero-bji-ph1/edito-2560-x-1440/dacia-sandero-bji-ph1-001.jpg.ximg.xsmall.jpg/9cc9371dd4.jpg" alt="Voiture 1">
+      <img src="https://cdn.motor1.com/images/mgl/vj3bv/s3/2016-citroen-c3.jpg" alt="Voiture 2">
+      <img src="https://dacia.m-automotiv.ma/storage/versions/July2024/5EJlR0jqaK92buJBzZjy.webp" alt="Voiture 3">
+    </div>
+  </section>
+
+ <section id="reservation">
+  <h2>Réservez votre voiture</h2>
+  <form id="form-reservation">
+    <label for="nom">Nom complet :</label><br/>
+    <input type="text" id="nom" name="nom" required /><br/><br/>
+
+    <label for="voiture">Choisissez une voiture :</label><br/>
+    <select id="voiture" name="voiture" required>
+      <option value="">--Sélectionnez--</option>
+    </select><br/><br/>
+
+    <label for="jours">Nombre de jours :</label><br/>
+    <input type="number" id="jours" name="jours" min="1" required /><br/><br/>
+
+    <button type="submit">Réserver</button>
+  </form>
+  <p id="message"></p>
+</section>
+
+  <section id="localisation" class="fade-in">
+    <h2><i class="fas fa-map-marker-alt"></i> Où nous trouver</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section id="avis" class="fade-in">
+    <h2><i class="fas fa-comments"></i> Avis clients</h2>
+    <div class="avis-client">
+      <p>"Service rapide, voiture propre et bon prix."</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p><strong>Samira</strong></p>
+    </div>
+    <div class="avis-client">
+      <p>"Très professionnel, je recommande !"</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p><strong>Hamza</strong></p>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in contact">
+    <h2>Contact & Réseaux</h2>
+    <div class="socials">
+      <a href="https://linkedin.com/in/..." target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://facebook.com/..." target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/..." target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="annee"></span> Abdennour. Tous droits réservés.</p>
+  </footer>
+  
+  <script src="jre.js"></script>
+</body>
+</html> 
