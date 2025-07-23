@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Location de voitures au Maroc - Abdennour Location Auto propose des véhicules de qualité avec des tarifs compétitifs et un service client exceptionnel.">
+  <meta name="keywords" content="location voiture Maroc, location auto, voiture de location, Abdennour Location">
+  <title>Location Auto Abdennour - Louez votre voiture au Maroc</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+    <p>Chargement...</p>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Dark Mode Button -->
+  <button id="toggle-dark" title="Mode sombre"><i class="fas fa-moon"></i></button>
+
+  <!-- Scroll to top -->
+  <button id="btn-top" title="Retour en haut"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>Location Auto <span>Abdennour</span></h1>
+      </div>
+      <nav id="main-nav">
+        <a href="#" class="active">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#vehicules">Véhicules</a>
+        <a href="#reservation">Réservation</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+212600000000" class="phone-link"><i class="fas fa-phone"></i> +212 600-000000</a>
+      </nav>
+      <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h2>Location de voitures au Maroc</h2>
+      <p class="hero-subtitle">Des tarifs compétitifs, un service premium et des véhicules impeccables</p>
+      <div class="hero-btns">
+        <a href="#reservation" class="btn-primary">Réserver maintenant</a>
+        <a href="#vehicules" class="btn-secondary">Voir nos véhicules</a>
+      </div>
+      <div class="hero-features">
+        <div class="feature-item">
+          <i class="fas fa-check-circle"></i>
+          <span>Pas de frais cachés</span>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-check-circle"></i>
+          <span>Assurance tous risques</span>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-check-circle"></i>
+          <span>Service 24/7</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Nos <span>Services</span></h2>
+      <p class="section-subtitle">Découvrez pourquoi nos clients nous font confiance</p>
+      
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <i class="fas fa-car-side"></i>
+          </div>
+          <h3>Location flexible</h3>
+          <p>Choisissez la durée qui vous convient : à la journée, semaine ou mois avec des tarifs dégressifs.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Assistance 24/7</h3>
+          <p>Notre équipe est disponible 24h/24 et 7j/7 pour répondre à vos besoins et urgences.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3>Livraison sur site</h3>
+          <p>Nous livrons votre véhicule où vous voulez : aéroport, hôtel ou domicile sans frais supplémentaires.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Chauffeur privé</h3>
+          <p>Option chauffeur professionnel pour vos déplacements en toute sérénité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Véhicules -->
+  <section id="vehicules" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Notre <span>Flotte</span></h2>
+      <p class="section-subtitle">Des véhicules récents, bien entretenus et parfaitement équipés</p>
+      
+      <div class="vehicles-grid">
+        <!-- Les véhicules seront ajoutés dynamiquement par JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi nous choisir -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="why-us-content">
+        <h2 class="section-title">Pourquoi nous <span>choisir</span> ?</h2>
+        <ul class="why-us-list">
+          <li><i class="fas fa-check"></i> Plus de 10 ans d'expérience dans la location auto</li>
+          <li><i class="fas fa-check"></i> Véhicules contrôlés et entretenus régulièrement</li>
+          <li><i class="fas fa-check"></i> Transparence totale - pas de frais cachés</li>
+          <li><i class="fas fa-check"></i> Service client primé et disponible 24/7</li>
+          <li><i class="fas fa-check"></i> Prix compétitifs avec des offres spéciales régulières</li>
+          <li><i class="fas fa-check"></i> Process de réservation simple et rapide</li>
+        </ul>
+      </div>
+      <div class="why-us-image">
+        <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Client heureux avec voiture de location">
+      </div>
+    </div>
+  </section>
+
+  <!-- Réservation -->
+  <section id="reservation" class="section">
+    <div class="container">
+      <h2 class="section-title">Faites votre <span>Réservation</span></h2>
+      <p class="section-subtitle">Remplissez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais</p>
+      
+      <div class="reservation-container">
+        <form id="form-reservation" class="reservation-form">
+          <div class="form-group">
+            <label for="nom">Nom complet *</label>
+            <input type="text" id="nom" name="nom" required placeholder="Votre nom complet">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="Votre adresse email">
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Téléphone *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Votre numéro de téléphone">
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="voiture">Véhicule *</label>
+              <select id="voiture" name="voiture" required>
+                <option value="">-- Sélectionnez un véhicule --</option>
+                <!-- Options ajoutées dynamiquement -->
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="date-debut">Date de début *</label>
+              <input type="date" id="date-debut" name="date-debut" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date-fin">Date de fin *</label>
+              <input type="date" id="date-fin" name="date-fin" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="lieu">Lieu de prise en charge *</label>
+              <select id="lieu" name="lieu" required>
+                <option value="">-- Sélectionnez un lieu --</option>
+                <option value="Casablanca">Casablanca</option>
+                <option value="Marrakech">Marrakech</option>
+                <option value="Rabat">Rabat</option>
+                <option value="Agadir">Agadir</option>
+                <option value="Autre">Autre (précisez en commentaire)</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message ou demandes spéciales</label>
+            <textarea id="message" name="message" rows="4" placeholder="Vos commentaires ou demandes particulières"></textarea>
+          </div>
+          
+          <div class="form-footer">
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Envoyer la demande
+            </button>
+            <p class="form-note">* Champs obligatoires</p>
+          </div>
+        </form>
+        
+        <div class="reservation-info">
+          <h3>Informations importantes</h3>
+          <ul class="info-list">
+            <li><i class="fas fa-info-circle"></i> Âge minimum: 21 ans</li>
+            <li><i class="fas fa-info-circle"></i> Permis de conduire valide requis</li>
+            <li><i class="fas fa-info-circle"></i> Carte de crédit obligatoire pour la caution</li>
+            <li><i class="fas fa-info-circle"></i> Assurance tous risques incluse</li>
+            <li><i class="fas fa-info-circle"></i> Kilométrage illimité</li>
+          </ul>
+          
+          <div class="contact-box">
+            <h4>Vous avez des questions ?</h4>
+            <p><i class="fas fa-phone"></i> <a href="tel:+212600000000">+212 600-000000</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:contact@abdennourlocation.ma">contact@abdennourlocation.ma</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="reservation-message" class="reservation-message"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Questions <span>Fréquentes</span></h2>
+      <p class="section-subtitle">Trouvez les réponses aux questions les plus courantes</p>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            Quels documents sont nécessaires pour louer une voiture ?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Pour louer un véhicule, vous aurez besoin de :</p>
+            <ul>
+              <li>Votre permis de conduire valide (minimum 1 an d'ancienneté)</li>
+              <li>Une pièce d'identité (CIN ou passeport)</li>
+              <li>Une carte de crédit à votre nom pour la caution</li>
+              <li>Justificatif de domicile de moins de 3 mois (pour les résidents au Maroc)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            Quel est le montant de la caution et quand est-elle restituée ?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Le montant de la caution varie selon le modèle de véhicule (entre 3 000 et 10 000 MAD). Cette caution est bloquée sur votre carte de crédit au moment de la location et est restituée dans les 5 jours ouvrables après la restitution du véhicule, après vérification de son état.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            L'assurance est-elle incluse dans le prix de location ?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, tous nos véhicules sont assurés tous risques avec une franchise réduite. Vous avez également la possibilité de réduire la franchise à 0 MAD en optant pour notre assurance premium (supplément de 100 MAD/jour).</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            Puis-je annuler ou modifier ma réservation ?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Vous pouvez annuler ou modifier votre réservation sans frais jusqu'à 48h avant le début de la location. Pour les annulations de dernière minute, des frais pourraient s'appliquer selon les conditions générales.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            Que faire en cas d'accident ou de panne ?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>En cas d'accident ou de panne :</p>
+            <ol>
+              <li>Composez immédiatement notre numéro d'urgence 24/7</li>
+              <li>Ne quittez pas les lieux et prenez des photos si possible</li>
+              <li>Remplissez un constat amiable si nécessaire</li>
+              <li>Ne reconnaissez aucune responsabilité</li>
+              <li>Notre équipe prendra en charge la situation rapidement</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-contact">
+        <p>Vous ne trouvez pas la réponse à votre question ? <a href="#contact">Contactez-nous</a> directement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie -->
+  <section id="galerie" class="section">
+    <div class="container">
+      <h2 class="section-title">Notre <span>Galerie</span></h2>
+      <p class="section-subtitle">Découvrez notre flotte en images</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://cdn.group.renault.com/dac/master/dacia-vn/vehicules/sandero/sandero-bji/sandero-bji-ph1/edito-2560-x-1440/dacia-sandero-bji-ph1-001.jpg" width="300px" alt="Dacia Sandero">
+          <div class="gallery-overlay">
+            <h3>Dacia Sandero</h3>
+            <p>Économique et spacieuse</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://cdn.motor1.com/images/mgl/vj3bv/s3/2016-citroen-c3.jpg" width="300px" alt="Citroën C3">
+          <div class="gallery-overlay">
+            <h3>Citroën C3</h3>
+            <p>Confort et style</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://dacia.m-automotiv.ma/storage/versions/July2024/5EJlR0jqaK92buJBzZjy.webp" width="300px" alt="Renault Clio">
+          <div class="gallery-overlay">
+            <h3>Renault Clio</h3>
+            <p>Polyvalente et fiable</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" width="300px" alt="Peugeot 208">
+          <div class="gallery-overlay">
+            <h3>Peugeot 208</h3>
+            <p>Design et performance</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" width="300px" alt="Hyundai Tucson">
+          <div class="gallery-overlay">
+            <h3>Hyundai Tucson</h3>
+            <p>SUV spacieux</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" width="300px" alt="Mercedes Classe C">
+          <div class="gallery-overlay">
+            <h3>Mercedes Classe C</h3>
+            <p>Luxe et performance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis -->
+  <section id="avis" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Avis <span>Clients</span></h2>
+      <p class="section-subtitle">Ce que nos clients disent de nous</p>
+      
+      <div class="testimonials-container">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-header">
+            <div class="client-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="client-info">
+              <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Samira">
+              <div>
+                <h4>Samira</h4>
+                <p>Casablanca</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"Service rapide et fiable ! J'ai loué une Clio pour une semaine et tout s'est parfaitement déroulé. Le véhicule était impeccable et le personnel très professionnel. Je recommande vivement."</p>
+          </div>
+          <div class="testimonial-date">
+            <i class="far fa-calendar-alt"></i> 15 Juin 2023
+          </div>
+        </div>
+        
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-header">
+            <div class="client-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="client-info">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Hamza">
+              <div>
+                <h4>Hamza</h4>
+                <p>Marrakech</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"Excellent rapport qualité-prix. J'ai comparé plusieurs agences et Abdennour Location offre les meilleurs tarifs pour des véhicules récents et bien entretenus. Le processus de réservation est simple et transparent."</p>
+          </div>
+          <div class="testimonial-date">
+            <i class="far fa-calendar-alt"></i> 2 Mai 2023
+          </div>
+        </div>
+        
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-header">
+            <div class="client-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="client-info">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Fatima">
+              <div>
+                <h4>Fatima</h4>
+                <p>Rabat</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"J'ai eu besoin d'une voiture en urgence et l'équipe a tout fait pour me trouver un véhicule adapté à mes besoins. Livraison ponctuelle et service client réactif. Je reviendrai certainement."</p>
+          </div>
+          <div class="testimonial-date">
+            <i class="far fa-calendar-alt"></i> 22 Avril 2023
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonials-cta">
+        <p>Vous aussi, partagez votre expérience avec nous !</p>
+        <a href="#contact" class="btn-secondary">Laisser un avis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Nous <span>Contacter</span></h2>
+      <p class="section-subtitle">Nous sommes à votre disposition pour toute question ou réservation</p>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Adresse</h3>
+              <p>123 Avenue Mohammed VI<br>Casablanca, Maroc</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Téléphone</h3>
+              <p><a href="tel:+212600000000">+212 600-000000</a></p>
+              <p><a href="tel:+212522000000">+212 522-000000</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p><a href="mailto:contact@abdennourlocation.ma">contact@abdennourlocation.ma</a></p>
+              <p><a href="mailto:reservation@abdennourlocation.ma">reservation@abdennourlocation.ma</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Heures d'ouverture</h3>
+              <p>Lundi - Vendredi: 8h00 - 20h00</p>
+              <p>Samedi: 9h00 - 18h00</p>
+              <p>Dimanche: 10h00 - 16h00</p>
+              <p>Urgences: 24h/24</p>
+            </div>
+          </div>
+          
+          <div class="social-media">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/212600000000" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="form-contact">
+            <div class="form-group">
+              <label for="contact-nom">Nom complet *</label>
+              <input type="text" id="contact-nom" name="contact-nom" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email">Email *</label>
+              <input type="email" id="contact-email" name="contact-email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-phone">Téléphone</label>
+              <input type="tel" id="contact-phone" name="contact-phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-sujet">Sujet *</label>
+              <select id="contact-sujet" name="contact-sujet" required>
+                <option value="">-- Sélectionnez un sujet --</option>
+                <option value="reservation">Réservation</option>
+                <option value="question">Question générale</option>
+                <option value="avis">Avis/Feedback</option>
+                <option value="reclamation">Réclamation</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Envoyer le message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carte -->
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.349646143038!2d-7.632787924025734!3d33.59359554291636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d3731f922c01%3A0x5e46c1e1fc83142d!2sCasablanca%20Twin%20Center!5e0!3m2!1sen!2sma!4v1620000000000!5m2!1sen!2sma" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-section">
+        <h3>Location Auto Abdennour</h3>
+        <p>Leader dans la location de voitures au Maroc avec des tarifs compétitifs et un service client exceptionnel.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Liens rapides</h3>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#vehicules">Véhicules</a></li>
+          <li><a href="#reservation">Réservation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Av. Mohammed VI, Casablanca</li>
+          <li><i class="fas fa-phone-alt"></i> +212 600-000000</li>
+          <li><i class="fas fa-envelope"></i> contact@abdennourlocation.ma</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Newsletter</h3>
+        <p>Abonnez-vous pour recevoir nos offres spéciales</p>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Votre email" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="annee"></span> Location Auto Abdennour. Tous droits réservés.</p>
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">CGV</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="portfolio.js"></script>
+</body>
+</html>
